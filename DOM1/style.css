@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    text-align: center;
+    background: url(images/martin-sX4lxBWV0-A.jpg) no-repeat center center/ cover;
+}
+
+.container{
+    width: 550px;
+}
+
+.header{
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 3rem 3rem;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.main-content .text-area{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.main-content .person{
+    font-size: 1.65rem;
+    color: red;
+    text-transform: uppercase;
+}
+
+.button-area button{
+    background-color: #222;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+.button-area button:active{
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .container{
+        padding: 4rem 1rem;
+        width: 100%;
+    }
+}
